@@ -1,8 +1,8 @@
-# 🏁 RaceDay API
+# RaceDay API
 
 A RESTful API for managing racing events, participants, event categories, enrolments, and race results.
 
-## 📌 Project Overview
+## Project Overview
 
 RaceDay is an event management system designed to allow **Organisers** to create and manage racing events, while **Participants** can register for events, enrol in race categories, and view their results.
 
