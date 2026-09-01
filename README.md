@@ -1,6 +1,6 @@
 # RaceDay — API Endpoint Plan
 
-Roles in this system: **Organiser** (creates and manages events, categories, and results) and **Participant** (browses events and enrols in categories). **Any** means any logged-in user regardless of role. **None** means no authentication required.
+The **RaceDay API** is designed to provide a structured interface through which users can securely interact with the system according to their assigned roles. The API follows **RESTful principles** by using HTTP methods such as `GET`, `POST`, `PUT`, and `DELETE` to retrieve, create, update, and remove resources respectively (Fielding and Reschke, 2014). Authentication and **role-based authorisation** are incorporated to ensure that users can only perform actions for which they have permission, which is an important consideration when designing secure APIs (OWASP, 2023). The system distinguishes between **Organisers**, who are responsible for managing events, categories, and results, and **Participants**, who can browse events and enrol in available categories. HTTP status codes such as `200`, `201`, `400`, `401`, `403`, `404`, and `409` are used to clearly communicate the outcome of API requests to clients (Fielding and Reschke, 2014). The following endpoint plan defines the routes, access requirements, request data, and expected responses for the RaceDay system.
 
 ## Authentication
 
