@@ -54,3 +54,11 @@ The **RaceDay API** is designed to provide a structured interface through which 
 | GET | /api/categories/{categoryId}/results | Returns the results/leaderboard for a category, ordered by position. | None | None | 200 OK — array of results <br> 404 Not Found |
 | GET | /api/users/me/results | Lists all results belonging to the logged-in Participant. | Participant | None | 200 OK — array of results |
 
+## References
+
+- Fielding, R.T. and Reschke, J. (2014). *Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content*. RFC 7231. Internet Engineering Task Force. Available at: https://www.rfc-editor.org/rfc/rfc7231 (Accessed: 1 September 2026).
+
+- Jones, M., Bradley, J. and Sakimura, N. (2015). *JSON Web Token (JWT)*. RFC 7519. Internet Engineering Task Force. Available at: https://www.rfc-editor.org/rfc/rfc7519 (Accessed: 1 September 2026).
+
+- OWASP (2023). *OWASP API Security Top 10*. Open Worldwide Application Security Project. Available at: https://owasp.org/API-Security/editions/2023/en/0x11-t10/ (Accessed: 1 September 2026).
+
