@@ -1,3 +1,81 @@
+# 🏁 RaceDay API
+
+A RESTful API for managing racing events, participants, event categories, enrolments, and race results.
+
+## 📌 Project Overview
+
+RaceDay is an event management system designed to allow **Organisers** to create and manage racing events, while **Participants** can register for events, enrol in race categories, and view their results.
+
+This repository contains the **Part 1 – System Planning and Database** deliverables. The planning phase establishes the database structure, API endpoints, user roles, and system requirements before API implementation begins.
+
+The API follows RESTful principles and uses standard HTTP request methods to allow clients to interact with system resources (Fielding and Reschke, 2014).
+
+---
+
+## 👥 User Roles
+
+### Organiser
+
+Organisers are responsible for managing the RaceDay system.
+
+**Permissions:**
+
+- Create events
+- Update events
+- Delete events
+- Create and manage event categories
+- View participant enrolments
+- Manage race results
+- View user profiles
+
+### Participant
+
+Participants use the system to register and participate in racing events.
+
+**Permissions:**
+
+- Register an account
+- Login
+- Manage their profile
+- View events
+- View event categories
+- Enrol in events
+- View their results
+
+Role-based access is used to separate administrative functionality from participant functionality and ensure that users only access operations appropriate to their assigned role.
+
+---
+
+## 🛠️ Technologies
+
+| Technology | Purpose |
+|---|---|
+| **C#** | Programming language |
+| **ASP.NET Core Web API** | RESTful API |
+| **Microsoft SQL Server** | Relational database |
+| **SQL Server Management Studio (SSMS)** | Database management |
+| **REST / HTTP** | API communication |
+| **Git** | Version control |
+| **GitHub** | Source control |
+| **GitHub Actions** | CI/CD |
+
+---
+
+## 📁 Repository Structure
+
+```text
+RaceDay/
+│
+├── .github/
+│   └── workflows/
+│       └── validate-docs.yml
+│
+├── docs/
+│   ├── ERD.png
+│   ├── endpoint-plan.md
+│   └── RaceDay.sql
+│
+└── README.md
 # RaceDay — API Endpoint Plan
 
 The **RaceDay API** is designed to provide a structured interface through which users can securely interact with the system according to their assigned roles. The API follows **RESTful principles** by using HTTP methods such as `GET`, `POST`, `PUT`, and `DELETE` to retrieve, create, update, and remove resources respectively (Fielding and Reschke, 2014). Authentication and **role-based authorisation** are incorporated to ensure that users can only perform actions for which they have permission, which is an important consideration when designing secure APIs (OWASP, 2023). The system distinguishes between **Organisers**, who are responsible for managing events, categories, and results, and **Participants**, who can browse events and enrol in available categories. HTTP status codes such as `200`, `201`, `400`, `401`, `403`, `404`, and `409` are used to clearly communicate the outcome of API requests to clients (Fielding and Reschke, 2014). The following endpoint plan defines the routes, access requirements, request data, and expected responses for the RaceDay system.
@@ -61,4 +139,11 @@ The **RaceDay API** is designed to provide a structured interface through which 
 - Jones, M., Bradley, J. and Sakimura, N. (2015). *JSON Web Token (JWT)*. RFC 7519. Internet Engineering Task Force. Available at: https://www.rfc-editor.org/rfc/rfc7519 (Accessed: 1 September 2026).
 
 - OWASP (2023). *OWASP API Security Top 10*. Open Worldwide Application Security Project. Available at: https://owasp.org/API-Security/editions/2023/en/0x11-t10/ (Accessed: 1 September 2026).
+- Fielding, R. and Reschke, J. (2014) Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content. RFC 7231. Internet Engineering Task Force. Available at: https://www.rfc-editor.org/rfc/rfc7231.html (Accessed: 1 September 2026).
+
+- GitHub (2026) Continuous integration. GitHub Docs. Available at: https://docs.github.com/en/actions/get-started/continuous-integration (Accessed: 1 September 2026).
+
+- GitHub (2026) Understanding GitHub Actions. GitHub Docs. Available at: https://docs.github.com/en/actions/get-started/understand-github-actions (Accessed: 1 September 2026).
+
+- Microsoft (2026) Primary and foreign key constraints - SQL Server. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints (Accessed: 1 September 2026).
 
