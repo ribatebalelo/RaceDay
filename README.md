@@ -16,7 +16,7 @@ The API follows RESTful principles and uses standard HTTP request methods to all
 <img width="1345" height="559" alt="Screenshot 2026-09-01 152140" src="https://github.com/user-attachments/assets/13fd97b8-27f2-4a5f-b88c-a495281934b0" />
 
 # RaceDay Database ERD
-![Uploading Screenshot 2026-09-01 172425.png…]()
+<img width="867" height="619" alt="ERD" src="https://github.com/user-attachments/assets/18c98d7c-db19-4767-b290-4eadff2fa19e" />
 
 The **RaceDay Database** is a relational database designed to manage running events, participants, categories, enrolments, and race results. The ERD uses **primary keys (PKs)** to uniquely identify records and **foreign keys (FKs)** to establish relationships between related tables (Microsoft, 2026).
 
