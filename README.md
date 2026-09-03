@@ -15,6 +15,28 @@ The API follows RESTful principles and uses standard HTTP request methods to all
 ## CI/CD Screenshot
 <img width="1345" height="559" alt="Screenshot 2026-09-01 152140" src="https://github.com/user-attachments/assets/13fd97b8-27f2-4a5f-b88c-a495281934b0" />
 
+# RaceDay Database ERD
+![Uploading Screenshot 2026-09-01 172425.png…]()
+
+The **RaceDay Database** is a relational database designed to manage running events, participants, categories, enrolments, and race results. The ERD uses **primary keys (PKs)** to uniquely identify records and **foreign keys (FKs)** to establish relationships between related tables (Microsoft, 2026).
+
+## Database Table
+
+- **USERS** – Stores participant and organiser details.
+- **EVENTS** – Stores event information such as name, location, date and status.
+- **CATEGORIES** – Stores race categories, distances, maximum participants and prices.
+- **ENROLMENTS** – Records participants registered for event categories.
+- **RESULTS** – Stores finishing times, positions and result statuses.
+
+## Relationships
+
+The database uses relationships between the tables to maintain data consistency and reduce data duplication. A user can organise multiple events, while an event can contain multiple categories. Users can also have multiple enrolments, with results linked to enrolments (Watt, n.d.).
+
+Primary and foreign keys are used to maintain **referential integrity** between related tables (Microsoft, 2026).
+
+## Database Design
+
+The ERD provides a structured blueprint for implementing the RaceDay database. Separating information into related tables supports **normalisation**, reduces redundancy and improves data integrity (Watt, n.d.).
 
 ## User Roles
 
@@ -133,4 +155,8 @@ The **RaceDay API** is designed to provide a structured interface through which 
 - GitHub (2026) Understanding GitHub Actions. GitHub Docs. Available at: https://docs.github.com/en/actions/get-started/understand-github-actions (Accessed: 1 September 2026).
 
 - Microsoft (2026) Primary and foreign key constraints - SQL Server. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints (Accessed: 1 September 2026).
+
+- Microsoft (2026) *Primary and foreign key constraints - SQL Server*. Microsoft Learn. Available at: https://learn.microsoft.com/en-us/sql/relational-databases/tables/primary-and-foreign-key-constraints (Accessed: 3 September 2026).
+
+- Watt, A. (n.d.) *Database Normalization*. BCcampus Open Publishing. Available at: https://opentextbc.ca/dbdesign01/chapter/chapter-12-normalization/ (Accessed: 3 September 2026).
 
