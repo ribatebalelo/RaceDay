@@ -16,7 +16,7 @@ The API follows RESTful principles and uses standard HTTP request methods to all
 <img width="1345" height="559" alt="Screenshot 2026-09-01 152140" src="https://github.com/user-attachments/assets/13fd97b8-27f2-4a5f-b88c-a495281934b0" />
 
 
-## 👥 User Roles
+## User Roles
 
 ### Organiser
 
